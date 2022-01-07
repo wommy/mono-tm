@@ -1,0 +1,31 @@
+{
+  "name": "technomad",
+  "workspaces": [
+    "packages/*"
+  ],
+  "turbo": {
+    "baseBranch": "origin/dev",
+    "npmClient": "pnpm",
+    "pipeline": {
+      "build": {
+        "dependsOn": [
+          "^build"
+        ]
+      },
+      "start": {
+        "dependsOn": [
+          "^build"
+        ]
+      }
+    }
+  },
+  "scripts": {
+    "test": "lerna run test",
+    "build": "turbo run build",
+    "start": "turbo run start --force --parallel"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0",
+    "turbo": "^1.0.24"
+  }
+}
