@@ -1,0 +1,12 @@
+{
+  "name": "@technomad/bragdoc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0-beta.10"
+  }
+}
