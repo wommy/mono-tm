@@ -3,6 +3,16 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "cssnano": {
+    "preset": [
+      "default",
+      {
+        "discardComments": {
+          "removeAll": true
+        }
+      }
+    ]
+  },
   "scripts": {
     "test": "echo testing eleventy with $npm_package_version",
     "build": "postcss src --base -d style --verbose",
