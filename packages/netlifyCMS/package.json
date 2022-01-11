@@ -1,0 +1,10 @@
+{
+  "name": "@technomad/netlifyCMS",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo testing netlifyCMS with $npm_package_version",
+    "start": "pnpm dlx netlify-cms-proxy-server"
+  }
+}
