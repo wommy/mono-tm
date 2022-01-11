@@ -1,4 +1,8 @@
 @tailwind utilities;
 @layer utilities {
 
+.flow > * + * {
+	margin-top: 1em;
+}
+
 }

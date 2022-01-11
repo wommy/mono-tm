@@ -1,7 +1,11 @@
 module.exports = {
   content: ['../eleventy/**/*.njk'],
   theme: {
-    extend: {},
+    extend: {
+      container: {
+        center: true,
+      },
+    },
   },
   plugins: [],
 }
