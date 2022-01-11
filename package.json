@@ -1,7 +1,8 @@
 {
   "name": "technomad",
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "apps/*"
   ],
   "turbo": {
     "baseBranch": "origin/dev",
