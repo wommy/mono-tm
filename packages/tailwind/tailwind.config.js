@@ -1,5 +1,5 @@
 module.exports = {
-  content: ['../eleventy/**/*.njk'],
+  content: ['../../**/*.njk'],
   theme: {
     extend: {
       container: {
