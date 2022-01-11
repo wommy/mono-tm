@@ -10,6 +10,12 @@ importers:
       lerna: 4.0.0
       turbo: 1.0.24
 
+  apps/bragdoc:
+    specifiers:
+      '@11ty/eleventy': ^1.0.0-beta.10
+    devDependencies:
+      '@11ty/eleventy': 1.0.0-beta.10
+
   packages/common:
     specifiers: {}
 
@@ -3018,7 +3024,7 @@ packages:
       depd: 1.1.2
       inherits: 2.0.3
       setprototypeof: 1.1.0
-      statuses: 1.4.0
+      statuses: 1.5.0
     dev: true
 
   /http-errors/1.8.1:
