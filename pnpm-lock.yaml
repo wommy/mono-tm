@@ -22,9 +22,11 @@ importers:
   packages/eleventy:
     specifiers:
       '@11ty/eleventy': ^1.0.0-beta.10
+      '@technomad/netlifyCMS': workspace:^1.0.0
       '@technomad/tailwind': workspace:^1.0.0
     devDependencies:
       '@11ty/eleventy': 1.0.0-beta.10
+      '@technomad/netlifyCMS': link:../netlifyCMS
       '@technomad/tailwind': link:../tailwind
 
   packages/server:
