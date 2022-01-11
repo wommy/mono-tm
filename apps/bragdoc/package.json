@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "nCMS": "pnpm dlx netlify-cms-proxy-server",
+    "nCMS": "pnpm dlx netlify-cms-proxy-server & pnpm start",
     "build": "eleventy",
     "start": "eleventy --serve --incremental"
   },
