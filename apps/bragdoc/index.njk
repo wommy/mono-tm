@@ -2,4 +2,31 @@
 layout: 'base.njk'
 title: wommy
 ---
-<p>workin</p>
+<header class="header p-3 flex justify-between items-center flex-shrink-0">
+	<h1 class="pl-4 font-bold tracking-wide text-gray-600 py-2">brags</h1>
+	<a class="btn btn-blue flex items-center" href="#edit">pic, wommy</a>
+</header>
+<main class="flex flex-col flex-grow flex-shrink-o">
+	<div class="w-full h-full flex-grow p-4 md:p-8">
+		<div class="w-full md:w-2/3 mx-auto pt-16">
+			<header>
+				<div>img</div>
+				<h2>name</h2>
+				<div>bio</div>
+			</header>
+			<ul class="flow pt-6 md:pt-12">
+				{% for brag in collections.brag | reverse %}
+				<li>
+					<div class="marker"></div>
+					<article>
+						<time datetime="{{ brag.date | htmlDateString }}">{{ brag.date | readableDate }}</time>
+						<h3>{{ brag.data.title }}</h3>
+						<section class="prose">{{ brag.templateContent | safe }}</section>
+					</article>
+				</li>
+				{% endfor %}
+			</ul>
+			<footer class="pt-16 text-center">footer</footer>
+		</div>
+	</div>
+</main>
