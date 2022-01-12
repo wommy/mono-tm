@@ -391,3 +391,17 @@ a:not([class]) {
 	-webkit-text-decoration-skip: ink;
 	        text-decoration-skip-ink: auto;
 }
+@media (min-width: 768px) {
+
+  .md\:w-2\/3 {
+    width: 66.666667%;
+  }
+
+  .md\:p-8 {
+    padding: 2rem;
+  }
+
+  .md\:pt-12 {
+    padding-top: 3rem;
+  }
+}

@@ -365,3 +365,14 @@
 .prose > :where(:last-child):not(:where([class~="not-prose"] *)) {
     margin-bottom: 0;
 }
+@media (min-width: 768px) {
+    .md\:w-2\/3 {
+        width: 66.666667%;
+    }
+    .md\:p-8 {
+        padding: 2rem;
+    }
+    .md\:pt-12 {
+        padding-top: 3rem;
+    }
+}
