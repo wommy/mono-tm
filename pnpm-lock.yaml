@@ -13,8 +13,10 @@ importers:
   apps/bragdoc:
     specifiers:
       '@11ty/eleventy': ^1.0.0-beta.10
+      luxon: ^2.3.0
     devDependencies:
       '@11ty/eleventy': 1.0.0-beta.10
+      luxon: 2.3.0
 
   packages/eleventy:
     specifiers:
