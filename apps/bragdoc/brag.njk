@@ -1,0 +1,28 @@
+---
+layout: 'base.njk'
+title: wommy
+---
+<header>
+	<h1>brags</h1>
+	<a href="#edit">edit</a>
+</header>
+<main class="container flow">
+	<header class="profile | flow">
+		<div>img</div>
+		<h2>name</h2>
+		<div>bio</div>
+	</header>
+	<ul class="flow">
+		{% for brag in collections.brag | reverse %}
+		<li>
+			<div class="marker"></div>
+			<article>
+				<time datetime="{{ brag.date | htmlDateString }}">{{ brag.date | readableDate }}</time>
+				<h3>{{ brag.data.title }}</h3>
+				<section class="prose">{{ brag.templateContent | safe }}</section>
+			</article>
+		</li>
+		{% endfor %}
+	</ul>
+	<footer>footer</footer>
+</main>
