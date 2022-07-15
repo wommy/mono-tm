@@ -1,0 +1,90 @@
+<html
+	xmlns:og="http://ogp.me/ns#"
+	xmlns:fb="https://www.facebook.com/2008/fbml"
+>
+	<head>
+		<title>Creeps, Tweeps, & the Limits of Social Media Freedom</title>
+		<meta
+			property="og:title"
+			content="Creeps, Tweeps, & the Limits of Social Media Freedom"
+		/>
+		<meta
+			property="og:url"
+			content="http://socialmediafreedom.neocities.org/"
+		/>
+		<meta
+			property="og:image"
+			content="http://socialmediafreedom.neocities.org/gae0.png"
+		/>
+		<meta
+			property="og:description"
+			content="If you aren't aware of the shitfight &quot;culture war&quot; raging online then you don't live here - it has been impossible to avoid. On every platform, in every community, the tensions run red-hot &amp; the trolls from both sides have come out to play. "
+		/>
+		<style>{% include 'readibility.css' %}</style>
+		<style>
+			@import url(https://fonts.googleapis.com/css?family=Vollkorn);
+
+			p {
+				position: relative;
+				z-index: auto;
+			}
+			a.hover img {
+				display: none;
+			}
+			a.hoverexpanded img {
+				display: none;
+			}
+
+			a.hover:hover img {
+				display: block;
+				position: absolute;
+				max-width: 60%;
+				left: 20%;
+				height: auto;
+				top: calc(100% + 0.5em);
+				z-index: 1;
+				border: 2px solid black;
+			}
+
+			a.hoverexpanded:hover img {
+				display: block;
+				position: absolute;
+				max-width: 100%;
+				height: auto;
+				top: calc(100% + 0.5em);
+				z-index: 1;
+				border: 2px solid black;
+			}
+
+			a {
+				color: black;
+			}
+
+			html,
+			body {
+				margin: 0;
+				padding: 0;
+				font-size: 1.1em;
+			}
+
+			article {
+				font-family: 'Vollkorn';
+				max-width: 40em;
+				margin-left: auto;
+				margin-right: auto;
+				text-align: justify;
+				color: black;
+			}
+
+			h1 {
+				text-align: center;
+				margin-top: 4em;
+				margin-bottom: 4em;
+			}
+		</style>
+	</head>
+
+	<body>
+		<article>{{ content | safe }}</article>
+	</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "@technomad/eleventy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo testing eleventy with $npm_package_version",
+    "build": "eleventy",
+    "start": "eleventy --serve --incremental"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0-beta.10",
+    "@technomad/tailwind": "workspace:^1.0.0"
+  }
+}
