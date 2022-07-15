@@ -24,40 +24,12 @@
 		<style>
 			@import url(https://fonts.googleapis.com/css?family=Vollkorn);
 
-			p {
-				position: relative;
-				z-index: auto;
-			}
-			a.hover img {
-				display: none;
-			}
-			a.hoverexpanded img {
+			a img {
 				display: none;
 			}
 
-			a.hover:hover img {
-				display: block;
-				position: absolute;
-				max-width: 60%;
-				left: 20%;
-				height: auto;
-				top: calc(100% + 0.5em);
-				z-index: 1;
-				border: 2px solid black;
-			}
-
-			a.hoverexpanded:hover img {
-				display: block;
-				position: absolute;
-				max-width: 100%;
-				height: auto;
-				top: calc(100% + 0.5em);
-				z-index: 1;
-				border: 2px solid black;
-			}
-
-			a {
-				color: black;
+			a:hover img {
+				display: inline-block;
 			}
 
 			html,
@@ -65,21 +37,20 @@
 				margin: 0;
 				padding: 0;
 				font-size: 1.1em;
+				color: black;
 			}
 
 			article {
 				font-family: 'Vollkorn';
 				max-width: 40em;
-				margin-left: auto;
-				margin-right: auto;
+				margin: 0 auto;
 				text-align: justify;
-				color: black;
 			}
 
 			h1 {
 				text-align: center;
-				margin-top: 4em;
-				margin-bottom: 4em;
+				/*margin-top: 4em;*/
+				/*margin-bottom: 4em;*/
 			}
 		</style>
 	</head>
